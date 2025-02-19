@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cardtrack/static/css/main.f84f320a.css",
-    "main.js": "/cardtrack/static/js/main.bd4f909a.js",
+    "main.js": "/cardtrack/static/js/main.6a2b1973.js",
     "static/media/conciliacao.png": "/cardtrack/static/media/conciliacao.9099c19fad0ed4f4734e.png",
     "static/media/imagemfundo.png": "/cardtrack/static/media/imagemfundo.7803fd0802812faa7356.png",
     "static/media/dadosvenda1.png": "/cardtrack/static/media/dadosvenda1.b74b20d964c4c7001b19.png",
@@ -10,10 +10,10 @@
     "static/media/cielologo.png": "/cardtrack/static/media/cielologo.20dcc542f944bdc927e1.png",
     "index.html": "/cardtrack/index.html",
     "main.f84f320a.css.map": "/cardtrack/static/css/main.f84f320a.css.map",
-    "main.bd4f909a.js.map": "/cardtrack/static/js/main.bd4f909a.js.map"
+    "main.6a2b1973.js.map": "/cardtrack/static/js/main.6a2b1973.js.map"
   },
   "entrypoints": [
     "static/css/main.f84f320a.css",
-    "static/js/main.bd4f909a.js"
+    "static/js/main.6a2b1973.js"
   ]
 }
