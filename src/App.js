@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CustomNavbar from "./components/CustomNavbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -45,7 +45,7 @@ import CadastrosGerenciarExtratos from "./screens/CadastrosGerenciarExtratos";
 
 function App() {
   return (
-    <>
+    <Router basename="/cardtrack">
       <Routes>
         {/* Rotas principais com Navbar e Footer */}
         <Route
@@ -291,7 +291,7 @@ function App() {
         {/* Rota de Login sem Navbar e Footer */}
         <Route path="/login" element={<Login />} />
       </Routes>
-    </>
+    </Router>
   );
 }
 
