@@ -1,0 +1,18 @@
+.sobre-container {
+  background: #f8f9fa;
+  padding: 20px;
+}
+
+.team-member-card {
+  transition: transform 0.3s ease;
+}
+
+.team-member-card:hover {
+  transform: translateY(-5px);
+}
+
+.section-title {
+  border-bottom: 2px solid #0d6efd;
+  display: inline-block;
+  padding-bottom: 8px;
+}

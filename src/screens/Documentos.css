@@ -1,0 +1,18 @@
+.documento-card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.documento-card:hover {
+  transform: translateY(-5px);
+}
+
+.documento-card .btn:hover {
+  opacity: 0.9;
+}
+
+/* Estilo para o título em duas linhas */
+.documento-card .card-title {
+  min-height: 44px;
+  line-height: 1.2;
+  margin-bottom: 0;
+}

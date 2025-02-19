@@ -1,0 +1,54 @@
+/* Estilos para o modal personalizado */
+.custom-modal {
+    max-width: 90% !important;
+    width: 90%;
+    margin: 1.75rem auto;
+}
+
+.custom-modal .modal-content {
+    border-radius: 8px;
+}
+
+.custom-modal .table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+.custom-modal .table td {
+    vertical-align: middle;
+}
+
+/* Estilos para os botões de ação */
+.custom-modal .action-button {
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2px;
+}
+
+/* Estilos para a paginação */
+.custom-modal .pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+}
+
+/* Estilos para o cabeçalho do modal */
+.custom-modal .modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    padding: 1rem;
+}
+
+/* Estilos para o rodapé do modal */
+.custom-modal .modal-footer {
+    border-top: 1px solid #dee2e6;
+    padding: 1rem;
+}
