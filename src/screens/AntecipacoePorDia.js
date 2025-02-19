@@ -32,10 +32,6 @@ const AntecipacoePorDia = () => {
     tipoOperacao: "Todos"
   });
 
-  const handleBuscar = () => {
-    // Implementar lógica de busca
-  };
-
   return (
     <div style={{ display: 'flex', minHeight: '100vh', backgroundColor: '#f5f5f5' }}>
       <Sidebar />
