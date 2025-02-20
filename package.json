@@ -2,7 +2,7 @@
   "name": "cardtrack",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gesielr.github.io/cardtrack",
+  "homepage": "https://gesielr.github.io/cardtrack/",
   "dependencies": {
     "bootstrap": "^5.3.3",
     "cra-template": "1.2.0",

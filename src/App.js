@@ -4,7 +4,6 @@ import CustomNavbar from "./components/CustomNavbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Features from "./components/Features";
-
 import Footer from "./components/Footer";
 import Login from "./components/Login";
 import Contract from "./components/Contract";
@@ -45,253 +44,79 @@ import CadastrosGerenciarExtratos from "./screens/CadastrosGerenciarExtratos";
 
 function App() {
   return (
-    <>
-      <Routes>
-        {/* Rotas principais com Navbar e Footer */}
-        <Route
-          path="/"
-          element={
-            <>
-              <CustomNavbar />
-              <div id="home">
-                <Hero />
-              </div>
-              <div id="features">
-                <Features />
-              </div>
-              <div id="about">
-                <About />
-              </div>
-             
-              <Footer />
-            </>
-          }
-        />
-        <Route
-          path="/contract"
-          element={
-            <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-              <CustomNavbar />
-              <div style={{ flex: 1, padding: '40px 0' }}>
-                <Contract />
-              </div>
-              <Footer />
+    <Routes>
+      {/* Rota principal com Navbar e Footer */}
+      <Route
+        path="/"
+        element={
+          <>
+            <CustomNavbar />
+            <div id="home">
+              <Hero />
             </div>
-          }
-        />
+            <div id="features">
+              <Features />
+            </div>
+            <div id="about">
+              <About />
+            </div>
+            <Footer />
+          </>
+        }
+      />
 
-        {/* Rotas internas do SaaS */}
-        <Route
-          path="/dashboard"
-          element={
-            <>             
-              <Dashboard />             
-            </>
-          }
-        />
-        <Route
-          path="/inconsistencias"
-          element={
-            <>          
-              <Inconsistencias />              
-            </>
-          }
-        />
-        <Route
-          path="/vendas"
-          element={
-            <>             
-              <Vendas />              
-            </>
-          }
-        />
+      {/* Outras rotas com Navbar e Footer */}
+      <Route
+        path="/contract"
+        element={
+          <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+            <CustomNavbar />
+            <div style={{ flex: 1, padding: '40px 0' }}>
+              <Contract />
+            </div>
+            <Footer />
+          </div>
+        }
+      />
 
-        <Route
-          path="/vendas-por-transacao"
-          element={
-            <>             
-              <VendasPorTransacao />             
-            </>
-          }
-        />
-        <Route
-          path="/vendas-por-dia"
-          element={
-            <>             
-              <VendasPorDia />             
-            </>
-          }
-        />
+      {/* Rota de Login sem Navbar e Footer */}
+      <Route path="/login" element={<Login />} />
 
-        <Route
-          path="/recebiveis"
-          element={
-            <>              
-              <Recebiveis />              
-            </>
-          }
-        />
-        <Route
-          path="/antecipacoes"
-          element={
-            <>              
-              <Antecipacoes />              
-            </>
-          }
-        />
-        <Route
-          path="/despesas"
-          element={
-            <>              
-              <Despesas />              
-            </>
-          }
-        />
-        <Route
-          path="/conciliacao"
-          element={
-            <>              
-              <Conciliacao />              
-            </>
-          }
-        />
-        <Route
-          path="/cadastros"
-          element={
-            <>              
-              <Cadastros />              
-            </>
-          }
-        />
-        <Route
-          path="/documentos"
-          element={
-            <>              
-              <Documentos />
-            </>
-          }
-        />
-        <Route
-          path="/relatorio"
-          element={
-            <>              
-              <Relatorio />             
-            </>
-          }
-        />
-        <Route
-          path="/administracao"
-          element={
-            <>              
-              <Administracao />              
-            </>
-          }
-        />
-        <Route
-          path="/recebiveis-por-transacao"
-          element={
-            <>             
-              <RecebiveisPorTransacao />             
-            </>
-          }
-        />
-        <Route
-          path="/recebiveis-por-dia"
-          element={
-            <>             
-              <RecebiveisPorDia />             
-            </>
-          }
-        />
-        <Route
-          path="/antecipacoes-por-transacao"
-          element={
-            <>             
-              <AntecipacoesTransacao />             
-            </>
-          }
-        />
-        <Route
-          path="/antecipacoes-por-dia"
-          element={
-            <>             
-              <AntecipacoePorDia />             
-            </>
-          }
-        />
-        <Route
-          path="/antecipacoes-simular"
-          element={
-            <>             
-              <AntecipacoesSimular />             
-            </>
-          }
-        />
-        <Route
-          path="/despesas-cancelamentos"
-          element={
-            <>             
-              <DespesasCancelamentos />             
-            </>
-          }
-        />
-        <Route
-          path="/despesas-tef-pos"
-          element={
-            <>             
-              <DespesasTefPos />             
-            </>
-          }
-        />
-        <Route
-          path="/despesas-financeiras"
-          element={
-            <>             
-              <DespesasFinanceiras />             
-            </>
-          }
-        />
-
-        {/* Rotas de Conciliação */}
-        <Route path="/conciliacao-vendas-resumo" element={<ConciliacaoVendasResumo />} />
-        <Route path="/conciliacao-vendas-detalhes" element={<ConciliacaoVendasDetalhes />} />
-        <Route path="/conciliacao-vendas-pendentes" element={<ConciliacaoVendasPendentes />} />
-        <Route path="/conciliacao-taxas" element={<ConciliacaoTaxas />} />
-        <Route path="/conciliacao-bancaria" element={<ConciliacaoBancaria />} />
-
-        {/* Rotas de Cadastros */}
-        <Route path="/cadastros-estabelecimento" element={<CadastrosEstabelecimento />} />
-        <Route path="/cadastros-est-adquirente" element={<CadastrosEstAdquirente />} />
-        <Route path="/cadastros-taxas-bandeiras" element={<CadastrosTaxasBandeiras />} />
-        <Route path="/cadastros-despesas" element={<CadastrosDespesas />} />
-        <Route path="/cadastros-dados-bancarios" element={<CadastrosDadosBancarios />} />
-        <Route
-          path="/cadastros-gerenciar-extratos"
-          element={
-            <>             
-              <CadastrosGerenciarExtratos />             
-            </>
-          }
-        />
-        <Route
-          path="/cadastros-gerenciar-extratos/excecao"
-          element={
-            <>             
-              <CadastrosGerenciarExtratos />             
-            </>
-          }
-        />
-
-        {/* Rotas de Administração */}
-        <Route path="/administracao/*" element={<Administracao />} />
-
-        {/* Rotas de Relatórios */}
-        <Route path="/relatorios/*" element={<Relatorio />} />
-
-        {/* Rota de Login sem Navbar e Footer */}
-        <Route path="/login" element={<Login />} />
-      </Routes>
-    </>
+      {/* Rotas internas */}
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/inconsistencias" element={<Inconsistencias />} />
+      <Route path="/vendas" element={<Vendas />} />
+      <Route path="/vendas-por-transacao" element={<VendasPorTransacao />} />
+      <Route path="/vendas-por-dia" element={<VendasPorDia />} />
+      <Route path="/recebiveis" element={<Recebiveis />} />
+      <Route path="/antecipacoes" element={<Antecipacoes />} />
+      <Route path="/despesas" element={<Despesas />} />
+      <Route path="/conciliacao" element={<Conciliacao />} />
+      <Route path="/cadastros" element={<Cadastros />} />
+      <Route path="/documentos" element={<Documentos />} />
+      <Route path="/relatorio" element={<Relatorio />} />
+      <Route path="/administracao" element={<Administracao />} />
+      <Route path="/recebiveis-por-transacao" element={<RecebiveisPorTransacao />} />
+      <Route path="/recebiveis-por-dia" element={<RecebiveisPorDia />} />
+      <Route path="/antecipacoes-por-transacao" element={<AntecipacoesTransacao />} />
+      <Route path="/antecipacoes-por-dia" element={<AntecipacoePorDia />} />
+      <Route path="/antecipacoes-simular" element={<AntecipacoesSimular />} />
+      <Route path="/despesas-cancelamentos" element={<DespesasCancelamentos />} />
+      <Route path="/despesas-tef-pos" element={<DespesasTefPos />} />
+      <Route path="/despesas-financeiras" element={<DespesasFinanceiras />} />
+      <Route path="/conciliacao-vendas-resumo" element={<ConciliacaoVendasResumo />} />
+      <Route path="/conciliacao-vendas-detalhes" element={<ConciliacaoVendasDetalhes />} />
+      <Route path="/conciliacao-vendas-pendentes" element={<ConciliacaoVendasPendentes />} />
+      <Route path="/conciliacao-taxas" element={<ConciliacaoTaxas />} />
+      <Route path="/conciliacao-bancaria" element={<ConciliacaoBancaria />} />
+      <Route path="/cadastros-estabelecimento" element={<CadastrosEstabelecimento />} />
+      <Route path="/cadastros-est-adquirente" element={<CadastrosEstAdquirente />} />
+      <Route path="/cadastros-taxas-bandeiras" element={<CadastrosTaxasBandeiras />} />
+      <Route path="/cadastros-despesas" element={<CadastrosDespesas />} />
+      <Route path="/cadastros-dados-bancarios" element={<CadastrosDadosBancarios />} />
+      <Route path="/cadastros-gerenciar-extratos" element={<CadastrosGerenciarExtratos />} />
+      <Route path="/cadastros-gerenciar-extratos/excecao" element={<CadastrosGerenciarExtratos />} />
+    </Routes>
   );
 }
 
