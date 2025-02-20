@@ -7,6 +7,7 @@ import Features from "./components/Features";
 import Footer from "./components/Footer";
 import Login from "./components/Login";
 import Contract from "./components/Contract";
+import Layout from "./components/Layout";
 
 // Importar as telas internas da pasta screens
 import Dashboard from "./screens/Dashboard";
@@ -41,6 +42,14 @@ import CadastrosTaxasBandeiras from "./screens/CadastrosTaxasBandeiras";
 import CadastrosDespesas from "./screens/CadastrosDespesas";
 import CadastrosDadosBancarios from "./screens/CadastrosDadosBancarios";
 import CadastrosGerenciarExtratos from "./screens/CadastrosGerenciarExtratos";
+
+// Importar os relatórios
+import RelatorioConciliacaoVendas from "./components/relatorios/RelatorioConciliacaoVendas";
+import RelatorioContaCorrenteBandeira from "./components/relatorios/RelatorioContaCorrenteBandeira";
+import RelatorioRecebiveis from "./components/relatorios/RelatorioRecebiveis";
+import RelatorioResumoOperacional from "./components/relatorios/RelatorioResumoOperacional";
+import RelatorioTaxas from "./components/relatorios/RelatorioTaxas";
+import RelatorioVendas from "./components/relatorios/RelatorioVendas";
 
 function App() {
   return (
@@ -116,6 +125,14 @@ function App() {
       <Route path="/cadastros-dados-bancarios" element={<CadastrosDadosBancarios />} />
       <Route path="/cadastros-gerenciar-extratos" element={<CadastrosGerenciarExtratos />} />
       <Route path="/cadastros-gerenciar-extratos/excecao" element={<CadastrosGerenciarExtratos />} />
+
+      {/* Rotas dos Relatórios */}
+      <Route path="/relatorio-conciliacao-vendas" element={<Layout><RelatorioConciliacaoVendas /></Layout>} />
+      <Route path="/relatorio-conta-corrente-bandeira" element={<Layout><RelatorioContaCorrenteBandeira /></Layout>} />
+      <Route path="/relatorio-recebiveis" element={<Layout><RelatorioRecebiveis /></Layout>} />
+      <Route path="/relatorio-resumo-operacional" element={<Layout><RelatorioResumoOperacional /></Layout>} />
+      <Route path="/relatorio-taxas" element={<Layout><RelatorioTaxas /></Layout>} />
+      <Route path="/relatorio-vendas" element={<Layout><RelatorioVendas /></Layout>} />
     </Routes>
   );
 }
