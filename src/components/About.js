@@ -93,7 +93,7 @@ const About = () => {
                 Simplifique sua gestão financeira hoje mesmo com o CardTrack
               </p>
               <button className="btn btn-primary btn-lg rounded-pill">
-                CONTRATAR
+                Contrate Agora 
               </button>
             </div>
           </Col>
