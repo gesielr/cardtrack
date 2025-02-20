@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cardtrack/static/css/main.f84f320a.css",
+    "main.css": "/cardtrack/static/css/main.bc6e5aa0.css",
     "main.js": "/cardtrack/static/js/main.fb3342f9.js",
     "static/media/conciliacao.png": "/cardtrack/static/media/conciliacao.9099c19fad0ed4f4734e.png",
     "static/media/imagemfundo.png": "/cardtrack/static/media/imagemfundo.7803fd0802812faa7356.png",
@@ -9,11 +9,11 @@
     "static/media/graficos.png": "/cardtrack/static/media/graficos.65be6de228ffd0114e05.png",
     "static/media/cielologo.png": "/cardtrack/static/media/cielologo.20dcc542f944bdc927e1.png",
     "index.html": "/cardtrack/index.html",
-    "main.f84f320a.css.map": "/cardtrack/static/css/main.f84f320a.css.map",
+    "main.bc6e5aa0.css.map": "/cardtrack/static/css/main.bc6e5aa0.css.map",
     "main.fb3342f9.js.map": "/cardtrack/static/js/main.fb3342f9.js.map"
   },
   "entrypoints": [
-    "static/css/main.f84f320a.css",
+    "static/css/main.bc6e5aa0.css",
     "static/js/main.fb3342f9.js"
   ]
 }
