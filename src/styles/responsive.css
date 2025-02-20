@@ -1,0 +1,141 @@
+/* Estilos globais de responsividade */
+
+/* Tablets e dispositivos menores */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  /* Ajustes para tabelas */
+  .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Ajustes para formulários */
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+
+  /* Ajustes para cards */
+  .card {
+    margin-bottom: 1rem;
+  }
+
+  /* Ajustes para botões */
+  .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Ajustes para navegação */
+  .navbar-collapse {
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .nav-link {
+    padding: 0.5rem 0;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 576px) {
+  /* Ajustes de texto */
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  /* Ajustes de layout */
+  .row {
+    margin-right: -7.5px;
+    margin-left: -7.5px;
+  }
+
+  .col, [class*="col-"] {
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+  }
+
+  /* Ajustes para modais */
+  .modal-dialog {
+    margin: 0.5rem;
+  }
+
+  /* Ajustes para filtros */
+  .filter-section {
+    flex-direction: column;
+  }
+
+  .filter-item {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Ajustes para gráficos */
+  .recharts-wrapper {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Ajustes para sidebar */
+  .sidebar {
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  /* Ajustes para conteúdo principal */
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/* Dispositivos muito pequenos */
+@media (max-width: 320px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+}
